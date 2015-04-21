@@ -83,7 +83,6 @@ cat >> /etc/httpd/conf.d/10-keystone_wsgi_main.conf << EOF
     MellonEnable "info"
     MellonSPPrivateKeyFile /etc/httpd/mellon/http_${VM_FQDN}_keystone.key
     MellonSPCertFile /etc/httpd/mellon/http_${VM_FQDN}_keystone.cert
-    MellonSPMetadataFile /etc/httpd/mellon/http_${VM_FQDN}_keystone.xml
     MellonIdPMetadataFile /etc/httpd/mellon/idp-metadata.xml
     MellonEndpointPath /v3/OS-FEDERATION/identity_providers/ipsilon/protocols/saml2/auth/mellon
     MellonIdP "IDP"
@@ -110,7 +109,6 @@ cat >> /etc/httpd/conf.d/10-keystone_wsgi_admin.conf << EOF
     MellonEnable "info"
     MellonSPPrivateKeyFile /etc/httpd/mellon/http_${VM_FQDN}_keystone.key
     MellonSPCertFile /etc/httpd/mellon/http_${VM_FQDN}_keystone.cert
-    MellonSPMetadataFile /etc/httpd/mellon/http_${VM_FQDN}_keystone.xml
     MellonIdPMetadataFile /etc/httpd/mellon/idp-metadata.xml
     MellonEndpointPath /v3/OS-FEDERATION/identity_providers/ipsilon/protocols/saml2/auth/mellon
     MellonIdP "IDP"
